@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        #header {
+            height: 50px;
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+
+        #footer {
+            height: 100px;
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+
+        #main {
+            flex-grow: 1;
+            display: flex;
+            overflow: hidden;
+        }
+
+        #left {
+            width: 200px;
+            overflow-y: scroll;
+            padding: 10px;
+            background-color: #e9ecef;
+        }
+
+        #right {
+            flex-grow: 1;
+            overflow-y: scroll;
+            padding: 10px;
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">Шапка</div>
+    <div id="main">
+        <div id="left">
+            Пользователь чата 1<br>
+            Пользователь чата 2<br>
+            Пользователь чата 3<br>
+            Пользователь чата 4<br>
+            Пользователь чата 5<br>
+            Пользователь чата 6
+        </div>
+        <div id="right">
+            Для заполнения окна контентом вот вам фото котика <br>
+            <img src="https://cs4.pikabu.ru/post_img/big/2015/03/20/6/1426840578_1215893866.jpeg" alt="Надеюсь картинка у вас загрузилась">
+        </div>
+    </div>
+    <div id="footer">Подвал</div>
+</body>
+</html>
